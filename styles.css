@@ -15,8 +15,19 @@ body {
     left: 0;
     right: 0;
     z-index: 9;
-    height: 476px;
+    height: 442px;
     overflow: hidden;
+    background: black;
+}
+
+.banner-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.lesson-image {
+    position: relative;
+    top: -277.4px;
 }
 
 .skim {
@@ -29,6 +40,18 @@ body {
     margin: 0 auto;
     text-align: left;
     font-family: "Avenir";
+}
+
+.container {
+    display: flex;
+}
+
+.welcome-content {
+    width: 75%;
+}
+
+.profile-image {
+    width: 25%;
 }
 
 .contact-button {
