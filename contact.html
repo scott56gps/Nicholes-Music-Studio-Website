@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <script>
+     /**
+      * Automatically grows an element's height, according to its content.
+      */
+     function auto_grow(element) {
+         element.style.height = "5px";
+         element.style.height = (element.scrollHeight) + "px";
+     }
+    </script>
+
+<head>
+    <title>Home | Nicholes Music Studio</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+</head>
+
+<body>
+    <div class="banner">
+        <img src="assets/piano-banner.jpg" class="banner-image" />
+    </div>
+    <nav>
+        <ul class="nav-container skim">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active-link">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a href="lessons.html" class="nav-link">Lessons</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="logo wrapper">
+        <div>
+            <span id="nicholes">Nicholes</span>
+            <br />
+            <span id="music-studio">Music Studio</span>
+        </div>
+    </div>
+    <div class="content wrapper">
+        <header class="page-title" data-collection-id="54cc64f7e4b0d6a5dfe1c557">
+            <h1>Contact</h1>
+        </header>
+        <!-- CATEGORY NAV -->
+        <form>
+            <div class="contact-field">
+                <label for="first-name">First Name*</label>
+                <input id="first-name" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-field">
+                <label for="last-name">Last Name*</label>
+                <input id="last-name" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-field">
+                <label for="email">Email*</label>
+                <input id="email" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-message contact-field">
+                <label for="message">Message</label>
+                <textarea oninput="auto_grow(this)" class="contact-message-area"></textarea>
+            </div>
+        </form>
+</body>
+
+</html>
