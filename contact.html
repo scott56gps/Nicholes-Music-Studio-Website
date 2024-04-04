@@ -47,10 +47,27 @@
             <h1>Contact</h1>
         </header>
         <!-- CATEGORY NAV -->
-        <div>
-            Please send Scott Nicholes a message with any questions you have:
-            <div><a href="mailto:nicholesmusicstudio@gmail.com">nicholesmusicstudio@gmail.com</a></div>
-        </div>
+        <form>
+            <div class="contact-field">
+                <label for="first-name">First Name*</label>
+                <input id="first-name" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-field">
+                <label for="last-name">Last Name*</label>
+                <input id="last-name" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-field">
+                <label for="email">Email*</label>
+                <input id="email" class="contact-field-input" type="text" />
+            </div>
+
+            <div class="contact-message contact-field">
+                <label for="message">Message</label>
+                <textarea oninput="auto_grow(this)" class="contact-message-area"></textarea>
+            </div>
+        </form>
 </body>
 
 </html>
